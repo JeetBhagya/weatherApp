@@ -60,9 +60,4 @@ Follow these steps to set up and use the Weather App:
 
 ## APIs Used
 - [WeatherAPI](http://api.weatherapi.com)
-
-## Contributing
-Contributions are welcome! Feel free to submit pull requests or report any issues.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
+- 
