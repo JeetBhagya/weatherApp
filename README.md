@@ -1,27 +1,68 @@
-# WeatherApp
+# Weather App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
+Welcome to the Weather App! This Angular project allows users to retrieve weather information for a specific location, including current weather data and a 3-day forecast.
 
-## Development server
+## Core Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### 1. Location Search
+- The app provides a search functionality allowing users to enter a city or zip code to retrieve weather information.
 
-## Code scaffolding
+### 2. Current Weather Display
+- Displays current weather information such as temperature, wind speed, humidity, and weather condition icon.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 3. 3-Day Forecast
+- Shows a weather forecast for the next three days, including high and low temperatures, weather condition descriptions, and icons.
 
-## Build
+### 4. Responsive Design
+- The app is designed to be responsive, ensuring a seamless experience across different devices and screen sizes.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to Use
 
-## Running unit tests
+Follow these steps to set up and use the Weather App:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Clone the Repository
+1. Open your terminal.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command:
+    ```bash
+    git clone <repository-url>
+    ```
+   Replace `<repository-url>` with the URL of the Weather App repository.
 
-## Running end-to-end tests
+### Project Setup
+1. Navigate into the cloned directory:
+    ```bash
+    cd weather-app
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-## Further help
+3. Run the app:
+    ```bash
+    npm start
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+4. Open your browser and go to `http://localhost:4200` to view the app.
+
+### Usage
+1. Enter a city name or zip code in the search bar and press Enter or click the search button.
+2. View the current weather information displayed on the dashboard.
+3. Scroll down to see the 3-day weather forecast.
+
+## Technologies Used
+- Angular 17+
+- TypeScript
+- SCSS
+- API: WeatherAPI (WeatherAPI.com)
+
+## APIs Used
+- [WeatherAPI](http://api.weatherapi.com)
+
+## Contributing
+Contributions are welcome! Feel free to submit pull requests or report any issues.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
