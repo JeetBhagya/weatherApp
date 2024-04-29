@@ -18,36 +18,27 @@ export class AppComponent implements OnInit{
   constructor(private http: HttpClient) { }
   ngOnInit(): void {
     this.fetchWeatherData(this.cityName);
-    // this.fetchUpcomingForecast(this.cityName);
   }
   search() {
     if (this.cityName.trim() !== '') {
       // Search only if the input is not empty
       this.fetchWeatherData(this.cityName);
-      // this.fetchUpcomingForecast(this.cityName);
     }
   }
 
+  // to fetch weather data a/c to the city
   fetchWeatherData(city: string) {
     this.http.get(`${this.API_URL}?key=${this.API_KEY}&q=${city}&days=4`)
       .subscribe((response: any) => {
-        console.log(response);
-        // response.location.name
+        // console.log(response);
         this.weatherData = response;
         this.upcomingForecast = response.forecast.forecastday.slice(1);
       });
   }
 
-  // fetchUpcomingForecast(city: string) {
-  //   this.http.get(`http://api.weatherapi.com/v1/forecast.json?key=${this.API_KEY}&q=${city}&days=3`)
-  //     .subscribe((response: any) => {
-  //       // response.location.name
-  //       this.upcomingForecast = response;
-  //     });
-  // }
-
-  timeToDate(day: any) {
-    const date = new Date(day);
+  // converting date to day name
+  dateToDay(_date: any) {
+    const date = new Date(_date);
     const dayName = date.toLocaleString('en-US', { weekday: 'long' });
     return dayName;
   }
